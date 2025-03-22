@@ -2,6 +2,6 @@
 Demo projekt a `Flask` kipróbálásához  
 Lényeges elemek:
 - routing
-- templates hassználat
+- templates használat
 - paraméterek kezelése
 - űrlap input adatok feldolgozása
