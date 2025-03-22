@@ -3,6 +3,10 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return "Hello from Flask demo app!"
+
 @app.route("/hello")
 @app.route("/hello/<name>")
 def hello_world(name=None):
@@ -28,3 +32,6 @@ def login():
             error = 'Hibás felhasználónév vagy jelszó!'
 
     return render_template('login.html', error=error)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
